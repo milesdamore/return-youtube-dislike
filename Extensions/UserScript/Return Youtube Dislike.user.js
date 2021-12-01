@@ -42,7 +42,7 @@ function doXHR(opts) {
 }
 
 function getButtons() {
-  if (document.getElementById("menu-container").offsetParent === null) {
+  if (document.getElementById(<ul id="menu-container">).offsetParent === null) {
     return document.querySelector(
       "ytd-menu-renderer.ytd-watch-metadata > div"
     );
